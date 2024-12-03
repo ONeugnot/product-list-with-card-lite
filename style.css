@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&family=League+Spartan:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Red Hat Text", sans-serif;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #fcf8f6;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+main h1 {
+	font-size: 38px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.item {
+	gap: 20px;
+}
+
+.text {
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+}
+.title {
+	color: #87635a;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.content {
+	font-weight: 600;
+}
+
+.price {
+	color: #c73b0f;
+	font-weight: 900;
+}
+
+.white-car {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+	.list-media {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+	}
+	.car-media {
+		width: 100%;
+		align-content: center;
+		display: flex;
+		align-items: center;
+	}
+
+	.image {
+		display: block;
+		margin: auto;
+	}
+
+	.item-card {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+}
